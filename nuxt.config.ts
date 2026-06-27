@@ -1,9 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ["@nuxt/ui", "@nuxt/content", "@nuxthub/core"],
+	modules: ["@nuxt/ui", "@nuxt/content"],
 	css: ["~/assets/css/main.css"],
-	hub: {
-		db: "sqlite",
+	nitro: {
+		preset: "cloudflare_module",
+		cloudflare: {
+			deployConfig: true,
+			wrangler: {
+				d1_databases: [
+					{
+						binding: "DB",
+						database_name: "thewebbeckons",
+						database_id: "b67b8586-2f0b-4491-873c-0fc1eaaa1237",
+					},
+				],
+			},
+		},
 	},
 	content: {
 		database: {
