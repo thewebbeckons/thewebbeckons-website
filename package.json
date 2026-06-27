@@ -1,16 +1,28 @@
 {
+  "name": "thewebbeckons-website",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "preview": "nuxt preview"
   },
-  "devDependencies": {
-    "@nuxt/content": "^2.2.0",
-    "@nuxtjs/google-fonts": "^3.0.0-0",
-    "@nuxtjs/tailwindcss": "^6.0.1",
-    "nuxt": "3.0.0-rc.12"
+  "dependencies": {
+    "@nuxt/a11y": "1.0.0-alpha.1",
+    "@nuxt/content": "^3.11.0",
+    "@nuxt/eslint": "1.13.0",
+    "@nuxt/hints": "1.0.0-alpha.5",
+    "@nuxt/image": "2.0.0",
+    "@nuxt/scripts": "0.13.2",
+    "@nuxt/ui": "4.4.0",
+    "@unhead/vue": "^2.1.2",
+    "@vueuse/nuxt": "^14.2.0",
+    "better-sqlite3": "^12.6.2",
+    "eslint": "^9.39.2",
+    "nuxt": "^4.4.8",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
   }
 }

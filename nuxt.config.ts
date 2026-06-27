@@ -1,14 +1,21 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content'],
-  buildModules: [
-    '@nuxtjs/google-fonts'
+  modules: [
+    '@nuxt/content',
+    '@nuxt/a11y',
+    '@nuxt/eslint',
+    '@nuxt/hints',
+    '@nuxt/ui',
+    '@nuxt/scripts',
+    '@nuxt/image',
+    '@vueuse/nuxt',
   ],
-  googleFonts: {
-    families: {
-      Inter: {
-        wght: [800, 300]
-      }
-    }
-  }
+  css: [
+    '~/assets/css/main.css',
+  ],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
+  devtools: { enabled: true },
+  compatibilityDate: '2024-04-03',
 })
