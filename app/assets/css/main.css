@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+html {
+  background: #0c0a09;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #e7e5e4;
+  color: #0c0a09;
+}
+
+.prose {
+  color: #d6d3d1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.85;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  color: #fafaf9;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.prose h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  letter-spacing: 0;
+}
+
+.prose h2 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.prose p {
+  margin-top: 1.25rem;
+}
+
+.prose a {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.prose code {
+  color: #93c5fd;
+}
