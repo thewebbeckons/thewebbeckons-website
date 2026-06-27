@@ -5,6 +5,9 @@ export default defineNuxtConfig({
 	nitro: {
 		preset: "cloudflare_module",
 	},
+	routeRules: {
+		"/": { prerender: true },
+	},
 	content: {
 		experimental: {
 			sqliteConnector: "native",
