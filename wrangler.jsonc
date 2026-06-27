@@ -1,0 +1,36 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "thewebbeckons",
+  "main": ".output/server/index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public"
+  },
+  "compatibility_date": "2026-06-21",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "no_nodejs_compat_v2"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "thewebbeckons",
+      "database_id": "b67b8586-2f0b-4491-873c-0fc1eaaa1237"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
+  }
+}

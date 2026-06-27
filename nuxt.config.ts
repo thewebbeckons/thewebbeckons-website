@@ -4,23 +4,14 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/main.css"],
 	nitro: {
 		preset: "cloudflare_module",
-		cloudflare: {
-			deployConfig: true,
-			wrangler: {
-				d1_databases: [
-					{
-						binding: "DB",
-						database_name: "thewebbeckons",
-						database_id: "b67b8586-2f0b-4491-873c-0fc1eaaa1237",
-					},
-				],
-			},
-		},
 	},
 	content: {
+		experimental: {
+			sqliteConnector: "native",
+		},
 		database: {
-			type: "sqlite",
-			filename: ".data/content.db",
+			type: "d1",
+			bindingName: "DB",
 		},
 	},
 	ui: {

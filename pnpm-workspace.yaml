@@ -1,13 +1,17 @@
-packages: []
-
-allowBuilds:
-  '@parcel/watcher': true
-  better-sqlite3: true
-  esbuild: true
-  vue-demi: true
-
 onlyBuiltDependencies:
+  - '-'
+  - '3'
   - '@parcel/watcher'
+  - b
   - better-sqlite3
+  - e
   - esbuild
+  - i
+  - l
+  - q
+  - r
+  - s
+  - sharp
+  - t
   - vue-demi
+  - workerd
